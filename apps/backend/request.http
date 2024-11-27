@@ -1,0 +1,60 @@
+GET http://localhost:4000/ping
+
+###
+GET http://localhost:4000/events
+
+###
+GET http://localhost:4000/events/717164ef-b2a3-46cc-8663-8454cbdea2f3"
+###
+GET http://localhost:4000/events/evento-fullstack
+
+###
+GET http://localhost:4000/events/valid/evento-fullstack/1
+
+
+###
+POST http://localhost:4000/events/access
+Content-Type: application/json
+
+{
+  "password": "joao2024asa",
+  "id": "15"
+}
+
+### 
+POST http://localhost:4000/events/evento-fullstack/convidado
+Content-Type: application/json
+
+{
+  "id": "3ba70b10-339e-45ee-a5f8-8358bdc0676e",
+  "name": "felipe",
+  "email": "felipe@example.com",
+  "confirm": true,
+  "hasAnEscort": false,
+  "qtdEscort": 2
+}
+
+### 
+POST http://localhost:4000/events
+Content-Type: application/json
+
+{
+    "alias": "evento-fullstack-2025",
+    "password": "senha123",
+    "name": "Evento de Desenvolvimento Fullstack",
+    "date": "2024-12-01T23:00",
+    "local": "São Paulo, SP",
+    "description":"Um evento completo para aprender desenvolvimento fullstack do zero.",
+    "image":"https://play-lh.googleusercontent.com/mpBm6uxkAwCTaDL7us2iG0L-Lpxb6_vUYxJ5dBMSrKFGZoION2lUY5RkJYModzngyIk",
+    "backgroundImage": "https://images.prismic.io/vaultinum/0458a9f1-e149-4037-b9aa-aa4b4fb53c25_propriete-intellectuelle-code-source-protection-compressed.jpg?auto=compress,format&rect=0,0,2400,981&w=2400&h=981",
+    "publicExpect": 200,
+    "guests": [
+      {
+        "name": "felipe",
+        "email": "felipe@example.com",
+        "confirm": true,
+        "hasAnEscort": false,
+        "qtdEscort": 2
+      }
+    ]
+}
